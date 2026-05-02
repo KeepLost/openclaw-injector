@@ -5,7 +5,7 @@
 This is an HTTPS → WebSocket bridge for injecting messages into OpenClaw Gateway sessions, so that OpenClaw agent can respond to external message without watching/monitoring event streams, and such response is based on the latest session history with user.
 
 In short, OpenClaw Injector let you invite external applications into your direct chat with OpenClaw, so that:
-1) External applications can literally **talk to OpenClaw**.
+1) External applications can literally **talk to OpenClaw**. No need to achieve this with AI.
 2) Your OpenClaw agent **responds to their messages following the instructions you gave in current session history**.
 3) When they do not send any message, you let your OpenClaw do whatever you want.
 
@@ -20,7 +20,8 @@ Below are the reasons why I develop this OpenClaw Injector.
 1. *Why not using cron or heartbeat*: In my situation, this is not a scheduled task, nor is it a periodic event that occurs at fixed intervals. Having OpenClaw continuously monitor it mostly yields no benefit and only wastes tokens, as well as my own time and energy.
 2. *Why not using webhook*: I tried this at first time, but found out that this would create an isolated session for every incoming message, which does not meet my demand that response shall be made based on my instructions in session history.
 3. *Why not using multi-agent*: I need some special functionalities from particular application. Building with AI agent from scratch is not a wise choice in my case.
-4. *Why not creating an extra agent to actively and constantly watching external event stream and let it respond as soon as there's an update*: You prefer wasting tokens on such thing, and permit such thing blocking the whole session? If so, all right you win. 😓
+4. *Why not using ACP bridge from OpenClaw*: ACP bridge is designed for cross-agent collaboration. Such complexity exceeds what I intend to do, and it's very very difficult (and inefficient) for arbitrary application to support ACP.
+5. *Why not creating an extra agent to actively and constantly watching external event stream and let it respond as soon as there's an update*: You prefer wasting tokens on such thing, and permit such thing blocking the whole session? If so, all right you win. 😓
 
 ## How this works?
 
@@ -193,7 +194,7 @@ Check whether the router's WebSocket connection to Gateway is alive.
 curl https://localhost:8443/health --cacert certs/server.crt
 ```
 
-```json
+```
 {
   "status": "healthy"    # or having other response if disconnected
 }
