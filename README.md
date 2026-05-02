@@ -195,7 +195,7 @@ curl https://localhost:8443/health --cacert certs/server.crt
 
 ```json
 {
-  "status": "healthy"    // or having other response if disconnected
+  "status": "healthy"    # or having other response if disconnected
 }
 ```
 
