@@ -122,7 +122,11 @@ The router will:
 
 ## Demo Video
 
-<video src="./assets/demo_video.mp4" controls=""></video>
+<video src="./assets/demo_video.mp4" controls width="800">
+  Sorry, your browser does not support embedded video.
+</video>
+
+Video Source: https://github.com/KeepLost/openclaw-injector/blob/main/assets/demo_video.mp4
 
 ## Device registration
 
