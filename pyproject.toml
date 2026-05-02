@@ -1,0 +1,12 @@
+[project]
+name = "openclaw-injector"
+version = "0.1.0"
+description = "HTTPS → WebSocket bridge for injecting messages into OpenClaw Gateway sessions"
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.13.5",
+    "cryptography>=46.0.7",
+    "python-dotenv>=1.2.2",
+    "pyyaml>=6.0.3",
+    "websockets>=16.0",
+]

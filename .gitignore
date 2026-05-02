@@ -1,0 +1,32 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+uv.lock
+.python-version
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.claude/
+.codex/
+.cline/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+certs/
+*.key
+*.pem
+device.json
+config.yaml

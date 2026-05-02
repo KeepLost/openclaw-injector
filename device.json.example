@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "deviceId": "your_device_id_64_hex_chars_here_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nYour_Ed25519_Public_Key_Base64_Here\n-----END PUBLIC KEY-----\n",
+  "privateKeyPem": "-----BEGIN PRIVATE KEY-----\nYour_Ed25519_Private_Key_Base64_Here\n-----END PRIVATE KEY-----\n",
+  "createdAtMs": 0
+}

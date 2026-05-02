@@ -1,0 +1,7 @@
+{
+  "id": "gateway-client",
+  "displayName": "External message injected into the current session",
+  "version": "1.0.0",
+  "platform": "linux",
+  "mode": "backend"
+}
