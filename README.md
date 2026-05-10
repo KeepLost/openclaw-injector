@@ -11,6 +11,10 @@ In short, OpenClaw Injector let you invite external applications into your direc
 
 It's like a guest is participating in the chat between you and OpenClaw, but this "guest" is not a human or AI user -- it's an external program that's under your control. (You definitely would control who can inject messages to your OpenClaw session, right?)
 
+## Demo Video
+
+https://github.com/user-attachments/assets/49386066-a86b-4505-b049-f691b28ce24a
+
 ## Why using this? No other choice?
 
 I guess you everybody are tired of hearing or seeing "novel" AI products, which, most of them, have very very similar concepts and functionalities. However, this one is really different.
@@ -120,14 +124,6 @@ The router will:
 - Connect to OpenClaw Gateway via WebSocket and authenticate
 - Start an HTTPS server on the configured port
 - Automatically reconnect if the WebSocket connection drops (exponential backoff, max 30s)
-
-## Demo Video
-
-<video src="./assets/demo_video.mp4" controls width="800">
-  Sorry, your browser does not support embedded video.
-</video>
-
-Video Source: https://github.com/KeepLost/openclaw-injector/blob/main/assets/demo_video.mp4
 
 ## Device registration
 
