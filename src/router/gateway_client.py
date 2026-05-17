@@ -103,7 +103,7 @@ class GatewayClient:
             "method": "connect",
             "params": {
                 "minProtocol": 3,
-                "maxProtocol": 3,
+                "maxProtocol": 4,
                 "client": self.client_metadata,
                 "device": {
                     "id": self.device_identity.device_id,
